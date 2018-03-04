@@ -1,0 +1,25 @@
+{
+  "name": "finance-table",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dean Shi <dean.xiaoshi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cli-table2": "^0.2.0",
+    "colors": "^1.1.2",
+    "fast-csv": "^2.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "1.11.1"
+  }
+}
