@@ -29,7 +29,7 @@ const table = new Table({
 const row = []
 
 function print(num, isRate) {
-  return `${Math.abs(num.toFixed(precision))}${isRate ? '' : '%'}`[
+  return `${num.toFixed(precision)}${isRate ? '' : '%'}`[
     num < 0 ? 'red' : 'green'
   ]
 }
@@ -49,7 +49,7 @@ csv
     const monthIndex = new Date(date).getUTCMonth()
     const val = MODE === 0 ? amount(Close, Open) : rate(Close, Open)
 
-    row[monthIndex + 1] = print(val)
+    row[monthIndex + 1] = print(val, MODE === 0)
 
     if (monthIndex === START_OF_MONTH) {
       row[START_OF_MONTH] = new Date(date).getUTCFullYear()
