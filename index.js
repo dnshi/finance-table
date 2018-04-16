@@ -23,7 +23,7 @@ const monthNames = [
 ]
 
 const table = new Table({
-  head: ['', ...monthNames.map(name => name.yellow)],
+  head: ['', ...monthNames.map((name) => name.yellow)],
 })
 
 const row = []
